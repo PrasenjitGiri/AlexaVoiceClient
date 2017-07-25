@@ -1,0 +1,17 @@
+ATS settings has been enabled after using the following command
+curl -v https://api.amazon.com/auth/O2/token
+
+
+It sounds like you're stuck with this format. In that case, to parse this response, you first have to get the boundary out of the Content-Type in the NSURLResponse headers. Then you can scan the NSData response payload for -- followed by that boundary string. Then you're going to have a couple of headers for each part, followed by a blank line, followed by the payload. The first payload is the JSON. The second is the image. You simple read in the bytes until you encounter the next \r\n followed by --, followed by the boundary. The whole thing is terminated with a -- followed by a boundary, followed immediately by another --.
+
+http://stackoverflow.com/questions/27808830/nsdata-multi-part-response-from-nsurlconnection
+
+
+2016-03-07 13:46:33.646 alexaTestApp[6358:1658485]
+Token: (null)
+2016-03-07 13:46:35.400 alexaTestApp[6358:1658485]
+AccessToken: Atza|IQEBLjAsAhQKmg7G33ukXc_5d1rbtA6LGwx24AIUfTVQnKjELgO_Ynl5-Sj9QIGCbqZFieo8GFoKFJJktjutW7bLpR_uqcDhaG7yUO94nC8QaOJS83FW7Iet_lTsO7u8DDEKCuxQrrNgRI4uSEZ67ZRwQt0R6YqzBo2leHParYT7uZohXJ2_fdL3JGxterJ7BpMCTEOVPoYuRaASkezge_89vcUzP1JZds3OydaxOcLTlSUp--IJAt_WU2ScKBaMTjBMJCS5iXfkfxmVicxGn-LcwrXDqQ-P8cye6MqXgDC362rpkNjVi0gleLxvCF_TH4FRxP6ZUcpbqD3aauwGTAHC1KtOQPYf3VvoDe0JcbqmlZsdQ-rC9UWoV96kri52h7AcE0Mo0CRFUs9K4bb01O9k0dGba8bsXZAqlWudw8RU-BU
+2016-03-07 13:46:35.411 alexaTestApp[6358:1658485]
+
+2016-03-07 13:47:17.773 alexaTestApp[6358:1659339]
+Response code: 500

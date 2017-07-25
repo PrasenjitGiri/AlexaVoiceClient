@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8701B7D81C2BA1D300C96984 /* AMZNLogoutDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8701B7D71C2BA1D300C96984 /* AMZNLogoutDelegate.m */; };
+		8701B7DB1C2BC2AE00C96984 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701B7DA1C2BC2AE00C96984 /* FooterView.xib */; };
+		8701B7DE1C2BC42300C96984 /* FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8701B7DD1C2BC42300C96984 /* FooterView.m */; };
+		8718A2231C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718A2221C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.m */; };
+		8718A2281C2B212700CC9A2D /* NSData+MultipartResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718A2271C2B212700CC9A2D /* NSData+MultipartResponses.m */; };
+		8718A2301C2B500000CC9A2D /* SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718A22F1C2B500000CC9A2D /* SCSiriWaveformView.m */; };
+		871A04311C30F7930075ED8E /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 871A04301C30F7930075ED8E /* LandingViewController.m */; };
+		875E37021C22AFCF00C8BFFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 875E37011C22AFCF00C8BFFE /* main.m */; };
+		875E37051C22AFCF00C8BFFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 875E37041C22AFCF00C8BFFE /* AppDelegate.m */; };
+		875E370B1C22AFCF00C8BFFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875E37091C22AFCF00C8BFFE /* Main.storyboard */; };
+		875E370D1C22AFCF00C8BFFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875E370C1C22AFCF00C8BFFE /* Assets.xcassets */; };
+		875E37101C22AFCF00C8BFFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875E370E1C22AFCF00C8BFFE /* LaunchScreen.storyboard */; };
+		875E37181C22B25400C8BFFE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875E37171C22B25400C8BFFE /* Security.framework */; };
+		875E371D1C22B29400C8BFFE /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875E371C1C22B29400C8BFFE /* LoginWithAmazon.framework */; };
+		875E371F1C22B3AC00C8BFFE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875E371E1C22B3AC00C8BFFE /* SafariServices.framework */; };
+		875E37211C22B3B200C8BFFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875E37201C22B3B200C8BFFE /* CoreGraphics.framework */; };
+		875E37231C22B3C000C8BFFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875E37221C22B3C000C8BFFE /* UIKit.framework */; };
+		875E37251C22B3C600C8BFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875E37241C22B3C600C8BFFE /* Foundation.framework */; };
+		875E37291C22B86B00C8BFFE /* LoginWithAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 875E37281C22B86B00C8BFFE /* LoginWithAmazonViewController.m */; };
+		875E372D1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 875E372C1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.m */; };
+		875E37301C22BB4200C8BFFE /* AMZNGetProfileDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 875E372F1C22BB4200C8BFFE /* AMZNGetProfileDelegate.m */; };
+		87A016321C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A016311C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.m */; };
+		87A016361C267569005B5D37 /* AudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A016351C267569005B5D37 /* AudioRecorderViewController.m */; };
+		87A016391C26757F005B5D37 /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A016381C26757F005B5D37 /* AudioRecorder.m */; };
+		87A0163B1C2675EC005B5D37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A0163A1C2675EC005B5D37 /* AVFoundation.framework */; };
+		87A016401C271BAE005B5D37 /* AVSUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A0163F1C271BAE005B5D37 /* AVSUploader.m */; };
+		87A016431C271BF3005B5D37 /* PartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A016421C271BF3005B5D37 /* PartData.m */; };
+		87A016461C27E25D005B5D37 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A016451C27E25D005B5D37 /* LaunchViewController.m */; };
+		87A0164A1C296208005B5D37 /* Findings in Resources */ = {isa = PBXBuildFile; fileRef = 87A016491C296208005B5D37 /* Findings */; };
+		87B67ACE1C23D59600D1D210 /* AMZNTokenAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B67ACD1C23D59600D1D210 /* AMZNTokenAuthorization.m */; };
+		87B67AD11C23E0C400D1D210 /* ApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B67AD01C23E0C400D1D210 /* ApplicationManager.m */; };
+		87B67AD51C24105400D1D210 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B67AD41C24105400D1D210 /* Config.m */; };
+		87B67AD81C24120700D1D210 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B67AD71C24120700D1D210 /* DeviceInfo.m */; };
+		87B67ADB1C24168100D1D210 /* UserAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B67ADA1C24168100D1D210 /* UserAgreementViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8701B7D61C2BA1D300C96984 /* AMZNLogoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZNLogoutDelegate.h; sourceTree = "<group>"; };
+		8701B7D71C2BA1D300C96984 /* AMZNLogoutDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZNLogoutDelegate.m; sourceTree = "<group>"; };
+		8701B7DA1C2BC2AE00C96984 /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		8701B7DC1C2BC42300C96984 /* FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterView.h; sourceTree = "<group>"; };
+		8701B7DD1C2BC42300C96984 /* FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterView.m; sourceTree = "<group>"; };
+		8718A2211C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMultiPartRequestBuilder.h; sourceTree = "<group>"; };
+		8718A2221C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMultiPartRequestBuilder.m; sourceTree = "<group>"; };
+		8718A2261C2B212700CC9A2D /* NSData+MultipartResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MultipartResponses.h"; sourceTree = "<group>"; };
+		8718A2271C2B212700CC9A2D /* NSData+MultipartResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MultipartResponses.m"; sourceTree = "<group>"; };
+		8718A22E1C2B500000CC9A2D /* SCSiriWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSiriWaveformView.h; sourceTree = "<group>"; };
+		8718A22F1C2B500000CC9A2D /* SCSiriWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSiriWaveformView.m; sourceTree = "<group>"; };
+		871A042F1C30F7930075ED8E /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		871A04301C30F7930075ED8E /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		875E36FD1C22AFCF00C8BFFE /* AlexaIOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexaIOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		875E37011C22AFCF00C8BFFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		875E37031C22AFCF00C8BFFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		875E37041C22AFCF00C8BFFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		875E370A1C22AFCF00C8BFFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		875E370C1C22AFCF00C8BFFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		875E370F1C22AFCF00C8BFFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		875E37111C22AFCF00C8BFFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875E37171C22B25400C8BFFE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		875E371C1C22B29400C8BFFE /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoginWithAmazon.framework; sourceTree = "<group>"; };
+		875E371E1C22B3AC00C8BFFE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		875E37201C22B3B200C8BFFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		875E37221C22B3C000C8BFFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		875E37241C22B3C600C8BFFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		875E37271C22B86B00C8BFFE /* LoginWithAmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithAmazonViewController.h; sourceTree = "<group>"; };
+		875E37281C22B86B00C8BFFE /* LoginWithAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithAmazonViewController.m; sourceTree = "<group>"; };
+		875E372B1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZNAuthorizeUserDelegate.h; sourceTree = "<group>"; };
+		875E372C1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZNAuthorizeUserDelegate.m; sourceTree = "<group>"; };
+		875E372E1C22BB4200C8BFFE /* AMZNGetProfileDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZNGetProfileDelegate.h; sourceTree = "<group>"; };
+		875E372F1C22BB4200C8BFFE /* AMZNGetProfileDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZNGetProfileDelegate.m; sourceTree = "<group>"; };
+		87A016301C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZNGetAccessTokenDelegate.h; sourceTree = "<group>"; };
+		87A016311C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZNGetAccessTokenDelegate.m; sourceTree = "<group>"; };
+		87A016341C267569005B5D37 /* AudioRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecorderViewController.h; sourceTree = "<group>"; };
+		87A016351C267569005B5D37 /* AudioRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorderViewController.m; sourceTree = "<group>"; };
+		87A016371C26757F005B5D37 /* AudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecorder.h; sourceTree = "<group>"; };
+		87A016381C26757F005B5D37 /* AudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorder.m; sourceTree = "<group>"; };
+		87A0163A1C2675EC005B5D37 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		87A0163D1C270C45005B5D37 /* RecorderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderProtocol.h; sourceTree = "<group>"; };
+		87A0163E1C271BAE005B5D37 /* AVSUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSUploader.h; sourceTree = "<group>"; };
+		87A0163F1C271BAE005B5D37 /* AVSUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSUploader.m; sourceTree = "<group>"; };
+		87A016411C271BF3005B5D37 /* PartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartData.h; sourceTree = "<group>"; };
+		87A016421C271BF3005B5D37 /* PartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartData.m; sourceTree = "<group>"; };
+		87A016441C27E25D005B5D37 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		87A016451C27E25D005B5D37 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		87A016491C296208005B5D37 /* Findings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Findings; sourceTree = "<group>"; };
+		87B67ACC1C23D59600D1D210 /* AMZNTokenAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMZNTokenAuthorization.h; sourceTree = "<group>"; };
+		87B67ACD1C23D59600D1D210 /* AMZNTokenAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMZNTokenAuthorization.m; sourceTree = "<group>"; };
+		87B67ACF1C23E0C400D1D210 /* ApplicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationManager.h; sourceTree = "<group>"; };
+		87B67AD01C23E0C400D1D210 /* ApplicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationManager.m; sourceTree = "<group>"; };
+		87B67AD31C24105400D1D210 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		87B67AD41C24105400D1D210 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		87B67AD61C24120700D1D210 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		87B67AD71C24120700D1D210 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		87B67AD91C24168100D1D210 /* UserAgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAgreementViewController.h; sourceTree = "<group>"; };
+		87B67ADA1C24168100D1D210 /* UserAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAgreementViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		875E36FA1C22AFCF00C8BFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A0163B1C2675EC005B5D37 /* AVFoundation.framework in Frameworks */,
+				875E37251C22B3C600C8BFFE /* Foundation.framework in Frameworks */,
+				875E37231C22B3C000C8BFFE /* UIKit.framework in Frameworks */,
+				875E37211C22B3B200C8BFFE /* CoreGraphics.framework in Frameworks */,
+				875E371F1C22B3AC00C8BFFE /* SafariServices.framework in Frameworks */,
+				875E371D1C22B29400C8BFFE /* LoginWithAmazon.framework in Frameworks */,
+				875E37181C22B25400C8BFFE /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8701B7D91C2BC25E00C96984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8701B7DF1C2BE0AD00C96984 /* FooterView */,
+				8718A22D1C2B4FE500CC9A2D /* SineView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8701B7DF1C2BE0AD00C96984 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				8701B7DA1C2BC2AE00C96984 /* FooterView.xib */,
+				8701B7DC1C2BC42300C96984 /* FooterView.h */,
+				8701B7DD1C2BC42300C96984 /* FooterView.m */,
+			);
+			name = FooterView;
+			sourceTree = "<group>";
+		};
+		8718A2291C2B4A0E00CC9A2D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8718A22B1C2B4E4F00CC9A2D /* Response */,
+				8718A22A1C2B4E4800CC9A2D /* Requests */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		8718A22A1C2B4E4800CC9A2D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		8718A22B1C2B4E4F00CC9A2D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8718A2261C2B212700CC9A2D /* NSData+MultipartResponses.h */,
+				8718A2271C2B212700CC9A2D /* NSData+MultipartResponses.m */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		8718A22D1C2B4FE500CC9A2D /* SineView */ = {
+			isa = PBXGroup;
+			children = (
+				8718A22E1C2B500000CC9A2D /* SCSiriWaveformView.h */,
+				8718A22F1C2B500000CC9A2D /* SCSiriWaveformView.m */,
+			);
+			name = SineView;
+			sourceTree = "<group>";
+		};
+		875E36F41C22AFCF00C8BFFE = {
+			isa = PBXGroup;
+			children = (
+				87A016481C2961E6005B5D37 /* Documents */,
+				875E371B1C22B28500C8BFFE /* Framework */,
+				875E36FF1C22AFCF00C8BFFE /* AlexaIOSClient */,
+				875E36FE1C22AFCF00C8BFFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		875E36FE1C22AFCF00C8BFFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				875E36FD1C22AFCF00C8BFFE /* AlexaIOSClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		875E36FF1C22AFCF00C8BFFE /* AlexaIOSClient */ = {
+			isa = PBXGroup;
+			children = (
+				8701B7D91C2BC25E00C96984 /* View */,
+				8718A2291C2B4A0E00CC9A2D /* Router */,
+				87A0163C1C270C19005B5D37 /* Protocols */,
+				87B67AC81C23D30A00D1D210 /* Model */,
+				87B67AC71C23D2FE00D1D210 /* Helpers */,
+				875E372A1C22B91C00C8BFFE /* AMZN */,
+				875E37261C22B84300C8BFFE /* Controllers */,
+				875E37001C22AFCF00C8BFFE /* Supporting Files */,
+				87B67ACF1C23E0C400D1D210 /* ApplicationManager.h */,
+				87B67AD01C23E0C400D1D210 /* ApplicationManager.m */,
+			);
+			name = AlexaIOSClient;
+			path = alexaTestApp;
+			sourceTree = "<group>";
+		};
+		875E37001C22AFCF00C8BFFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				875E37041C22AFCF00C8BFFE /* AppDelegate.m */,
+				875E37031C22AFCF00C8BFFE /* AppDelegate.h */,
+				875E37091C22AFCF00C8BFFE /* Main.storyboard */,
+				875E370C1C22AFCF00C8BFFE /* Assets.xcassets */,
+				875E370E1C22AFCF00C8BFFE /* LaunchScreen.storyboard */,
+				875E37111C22AFCF00C8BFFE /* Info.plist */,
+				875E37011C22AFCF00C8BFFE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		875E371B1C22B28500C8BFFE /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				87A0163A1C2675EC005B5D37 /* AVFoundation.framework */,
+				875E37241C22B3C600C8BFFE /* Foundation.framework */,
+				875E37221C22B3C000C8BFFE /* UIKit.framework */,
+				875E37201C22B3B200C8BFFE /* CoreGraphics.framework */,
+				875E371E1C22B3AC00C8BFFE /* SafariServices.framework */,
+				875E371C1C22B29400C8BFFE /* LoginWithAmazon.framework */,
+				875E37171C22B25400C8BFFE /* Security.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		875E37261C22B84300C8BFFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				875E37271C22B86B00C8BFFE /* LoginWithAmazonViewController.h */,
+				875E37281C22B86B00C8BFFE /* LoginWithAmazonViewController.m */,
+				87B67AD91C24168100D1D210 /* UserAgreementViewController.h */,
+				87B67ADA1C24168100D1D210 /* UserAgreementViewController.m */,
+				87A016341C267569005B5D37 /* AudioRecorderViewController.h */,
+				87A016351C267569005B5D37 /* AudioRecorderViewController.m */,
+				87A016441C27E25D005B5D37 /* LaunchViewController.h */,
+				87A016451C27E25D005B5D37 /* LaunchViewController.m */,
+				871A042F1C30F7930075ED8E /* LandingViewController.h */,
+				871A04301C30F7930075ED8E /* LandingViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		875E372A1C22B91C00C8BFFE /* AMZN */ = {
+			isa = PBXGroup;
+			children = (
+				875E372B1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.h */,
+				875E372C1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.m */,
+				875E372E1C22BB4200C8BFFE /* AMZNGetProfileDelegate.h */,
+				875E372F1C22BB4200C8BFFE /* AMZNGetProfileDelegate.m */,
+				87A016301C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.h */,
+				87A016311C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.m */,
+				8701B7D61C2BA1D300C96984 /* AMZNLogoutDelegate.h */,
+				8701B7D71C2BA1D300C96984 /* AMZNLogoutDelegate.m */,
+			);
+			name = AMZN;
+			sourceTree = "<group>";
+		};
+		87A0163C1C270C19005B5D37 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				87A0163D1C270C45005B5D37 /* RecorderProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		87A016481C2961E6005B5D37 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				87A016491C296208005B5D37 /* Findings */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		87B67AC71C23D2FE00D1D210 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8718A2211C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.h */,
+				8718A2221C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.m */,
+				87B67ACC1C23D59600D1D210 /* AMZNTokenAuthorization.h */,
+				87B67ACD1C23D59600D1D210 /* AMZNTokenAuthorization.m */,
+				87A016371C26757F005B5D37 /* AudioRecorder.h */,
+				87A016381C26757F005B5D37 /* AudioRecorder.m */,
+				87A0163E1C271BAE005B5D37 /* AVSUploader.h */,
+				87A0163F1C271BAE005B5D37 /* AVSUploader.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		87B67AC81C23D30A00D1D210 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87B67AD31C24105400D1D210 /* Config.h */,
+				87B67AD41C24105400D1D210 /* Config.m */,
+				87B67AD61C24120700D1D210 /* DeviceInfo.h */,
+				87B67AD71C24120700D1D210 /* DeviceInfo.m */,
+				87A016411C271BF3005B5D37 /* PartData.h */,
+				87A016421C271BF3005B5D37 /* PartData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		875E36FC1C22AFCF00C8BFFE /* AlexaIOSClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 875E37141C22AFCF00C8BFFE /* Build configuration list for PBXNativeTarget "AlexaIOSClient" */;
+			buildPhases = (
+				875E36F91C22AFCF00C8BFFE /* Sources */,
+				875E36FA1C22AFCF00C8BFFE /* Frameworks */,
+				875E36FB1C22AFCF00C8BFFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlexaIOSClient;
+			productName = alexaTestApp;
+			productReference = 875E36FD1C22AFCF00C8BFFE /* AlexaIOSClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		875E36F51C22AFCF00C8BFFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = PrasenjitGiri;
+				TargetAttributes = {
+					875E36FC1C22AFCF00C8BFFE = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = YJ9R4XZ4CL;
+					};
+				};
+			};
+			buildConfigurationList = 875E36F81C22AFCF00C8BFFE /* Build configuration list for PBXProject "AlexaIOSClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 875E36F41C22AFCF00C8BFFE;
+			productRefGroup = 875E36FE1C22AFCF00C8BFFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				875E36FC1C22AFCF00C8BFFE /* AlexaIOSClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		875E36FB1C22AFCF00C8BFFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875E37101C22AFCF00C8BFFE /* LaunchScreen.storyboard in Resources */,
+				875E370D1C22AFCF00C8BFFE /* Assets.xcassets in Resources */,
+				87A0164A1C296208005B5D37 /* Findings in Resources */,
+				8701B7DB1C2BC2AE00C96984 /* FooterView.xib in Resources */,
+				875E370B1C22AFCF00C8BFFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		875E36F91C22AFCF00C8BFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B67ADB1C24168100D1D210 /* UserAgreementViewController.m in Sources */,
+				875E37301C22BB4200C8BFFE /* AMZNGetProfileDelegate.m in Sources */,
+				875E37291C22B86B00C8BFFE /* LoginWithAmazonViewController.m in Sources */,
+				87A016431C271BF3005B5D37 /* PartData.m in Sources */,
+				87A016361C267569005B5D37 /* AudioRecorderViewController.m in Sources */,
+				87B67ACE1C23D59600D1D210 /* AMZNTokenAuthorization.m in Sources */,
+				875E372D1C22B92C00C8BFFE /* AMZNAuthorizeUserDelegate.m in Sources */,
+				8718A2301C2B500000CC9A2D /* SCSiriWaveformView.m in Sources */,
+				8701B7D81C2BA1D300C96984 /* AMZNLogoutDelegate.m in Sources */,
+				8701B7DE1C2BC42300C96984 /* FooterView.m in Sources */,
+				8718A2281C2B212700CC9A2D /* NSData+MultipartResponses.m in Sources */,
+				87A016391C26757F005B5D37 /* AudioRecorder.m in Sources */,
+				875E37051C22AFCF00C8BFFE /* AppDelegate.m in Sources */,
+				87B67AD11C23E0C400D1D210 /* ApplicationManager.m in Sources */,
+				87B67AD81C24120700D1D210 /* DeviceInfo.m in Sources */,
+				871A04311C30F7930075ED8E /* LandingViewController.m in Sources */,
+				87A016461C27E25D005B5D37 /* LaunchViewController.m in Sources */,
+				8718A2231C2B16CF00CC9A2D /* PGMultiPartRequestBuilder.m in Sources */,
+				87A016321C266BE7005B5D37 /* AMZNGetAccessTokenDelegate.m in Sources */,
+				87B67AD51C24105400D1D210 /* Config.m in Sources */,
+				87A016401C271BAE005B5D37 /* AVSUploader.m in Sources */,
+				875E37021C22AFCF00C8BFFE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		875E37091C22AFCF00C8BFFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				875E370A1C22AFCF00C8BFFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		875E370E1C22AFCF00C8BFFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				875E370F1C22AFCF00C8BFFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		875E37121C22AFCF00C8BFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		875E37131C22AFCF00C8BFFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		875E37151C22AFCF00C8BFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prasenjit Giri (3Z6UA2S6MN)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = alexaTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.tangyorangesour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		875E37161C22AFCF00C8BFFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prasenjit Giri (3Z6UA2S6MN)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = alexaTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.tangyorangesour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		875E36F81C22AFCF00C8BFFE /* Build configuration list for PBXProject "AlexaIOSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875E37121C22AFCF00C8BFFE /* Debug */,
+				875E37131C22AFCF00C8BFFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		875E37141C22AFCF00C8BFFE /* Build configuration list for PBXNativeTarget "AlexaIOSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875E37151C22AFCF00C8BFFE /* Debug */,
+				875E37161C22AFCF00C8BFFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 875E36F51C22AFCF00C8BFFE /* Project object */;
+}
